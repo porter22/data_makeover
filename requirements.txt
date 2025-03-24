@@ -1,3 +1,2 @@
 streamlit
 azure-storage-blob
-smtplib
