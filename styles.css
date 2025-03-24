@@ -1,0 +1,139 @@
+/* Set the entire page background to white */
+html, body, [data-testid="stAppViewContainer"] {
+    background: white !important;
+    color: black !important; /* Ensure text is readable */
+}
+
+p {
+    font-size: 10px;
+}
+
+
+/* Style the file uploader drop area */
+div[data-testid="stFileUploader"] {
+    width: 90% !important;  /* Make it take 80% of the screen */
+    max-width: 1800px !important; /* Prevent it from getting too large on big screens */
+    margin: auto !important;  /* Center it */
+    padding: 50px !important;
+    background: #E63946 !important;
+    border-radius: 12px !important;
+    border: 2px dashed white !important;
+    text-align: center;
+    transition: 0.3s;
+    font-size: large;
+}
+
+div[data-testid="stFileUploaderDropzoneInput"],
+div[data-testid="stFileUploaderDropzoneInstructions"],
+section[data-testid="stFileUploaderDropzone"],
+div[data-testid="stFileUploader"] {
+    background: #E63946 !important;
+}
+
+
+/* Change label text color */
+label[data-testid="stFileUploaderLabel"] {
+    font-size: 32px !important;
+    font-weight: bold !important;
+    color: #FFDD57 !important;
+    text-align: center !important;
+    display: block !important;
+}
+
+/* Customize the "Browse files" button */
+div[data-testid="stFileUploaderDropzone"] button {
+    background-color: #FFDD57 !important;
+    color: white !important;
+    font-weight: bold !important;
+    padding: 12px !important;
+    border-radius: 6px !important;
+    border: none !important;
+    transition: 0.3s;
+}
+
+button[data-testid="stBaseButton-secondary"] {
+    background-color: white !important; /* Dark gray button */
+    color: black !important;
+    font-weight: bold !important;
+    width: 50%;
+    height: 150px;
+    font-size: large !important;
+    text-transform: uppercase;
+}
+
+button[data-testid="stBaseButton-secondary"]:hover {
+    background-color: whitesmoke !important;
+    color: black !important;
+}
+
+
+/* Fix text input field color */
+.stTextInput > div > div > input,
+.stTextArea > div > textarea {
+    color: black !important;
+    background: white !important; /* Change from dark to white */
+    border: 2px solid #2C2F33 !important; /* Keep a visible border */
+    border-radius: 5px !important;
+    padding: 12px !important;
+    font-size: 22px !important;
+}
+
+
+
+
+div[data-testid="stMarkdownContainer"] {
+    font-size: 26px !important;
+}
+
+/* Fix label colors for text input and text area */
+label, div[data-testid="stTextInputLabel"], div[data-testid="stTextAreaLabel"] {
+    color: black !important; /* Ensure text labels are black */
+    font-weight: bold !important; /* Make them stand out */
+    font-size: 18px !important;
+}
+
+/* Fix background color for text area */
+.stTextArea > div > textarea {
+    background: white !important;  /* Set to white */
+    color: black !important;       /* Ensure text is black */
+    border: 2px solid #2C2F33 !important; /* Keep a clear border */
+    border-radius: 5px !important;
+    padding: 12px !important;
+    font-size:32px !important;
+}
+
+/* Ensure all input fields and text areas have a white background */
+textarea, input {
+    background: white !important;
+    color: black !important;
+    border: 2px solid #2C2F33 !important; /* Ensure visibility */
+    border-radius: 5px !important;
+    padding: 12px !important;
+    font-size: 20px !important;
+}
+
+/* Override specific Streamlit styles */
+.stTextArea textarea {
+    background: white !important;
+    color: black !important;
+}
+
+/* Ensure the text input field follows the same style */
+.stTextInput input {
+    background: white !important;
+    color: black !important;
+}
+
+/* Ensure placeholder text is visible in input and textarea */
+::placeholder {
+    color: #555 !important;  /* Dark gray for better readability */
+    opacity: 1 !important;   /* Ensure full visibility */
+}
+
+/* Specific override for Streamlit text inputs */
+.stTextInput input::placeholder,
+.stTextArea textarea::placeholder {
+    color: #555 !important; /* Ensure placeholder text is readable */
+    font-style: italic;     /* Optional: makes it look distinct */
+}
+
